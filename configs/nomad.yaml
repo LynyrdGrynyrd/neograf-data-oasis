@@ -14,9 +14,12 @@ north:
         image: ghcr.io/fairmat-nfdi/nomad-distro-template/jupyter:main
 
 meta:
-  deployment: "oasis"
-  deployment_url: "https://my-oasis.org/api"
-  maintainer_email: "me@my-oasis.org"
+  deployment: "neograf-oasis"
+  deployment_url: "http://10.0.0.21:9090/nomad-oasis/api"
+  maintainer_email: "jswanson@neograf.com"
+  title: NeoGraf Materials Data Hub
+  Description: Advanced Materials Research Data Management Platform
+  footer: © NeoGraf Solutions, 2025
 
 logstash:
   enabled: false
@@ -27,3 +30,12 @@ mongo:
 elastic:
   entries_index: nomad_oasis_entries_v1
   materials_index: nomad_oasis_materials_v1
+
+plugins:
+  include:
+    # Your custom NeoGraf plugin
+    - "neograf_plugin"
+    
+    # Keep any existing plugins listed here
+    # The template will automatically load all plugins from pyproject.toml
+    # but explicitly including yours ensures it's definitely loaded
