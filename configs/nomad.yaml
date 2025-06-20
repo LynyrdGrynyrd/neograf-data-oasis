@@ -15,10 +15,10 @@ north:
 
 meta:
   deployment: "neograf-oasis"
-  deployment_url: "http://10.0.0.21:9090/nomad-oasis/api"
+  deployment_url: "http://10.0.0.21:8000"
   maintainer_email: "jswanson@neograf.com"
   title: NeoGraf Materials Data Hub
-  Description: Advanced Materials Research Data Management Platform
+  description: Advanced Materials Research Data Management Platform
   footer: © NeoGraf Solutions, 2025
 
 logstash:
