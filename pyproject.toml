@@ -55,7 +55,7 @@ plugins = [
   "nomad-parser-plugins-atomistic>=1.0",
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
-  "neograf-plugin @ file://./plugins/neograf_plugin-0.1.0-py3-none-any.whl",
+  # "neograf-plugin @ file://./plugins/neograf_plugin-0.1.0-py3-none-any.whl",
   "nomad-material-processing>=1.0.0",
 ]
 jupyter = [
